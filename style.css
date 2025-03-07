@@ -1,0 +1,136 @@
+body {
+font-family: 'Roboto', sans-serif;
+background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+color: #ecf0f1;
+margin: 0;
+padding: 0;
+}
+
+#main-title {
+font-size: 2.0em;
+text-align: center;
+color: #ecf0f1;
+margin: 50px ;
+margin: 6px;
+}
+
+.container {
+display: grid;
+gap: 50px; 
+padding: 20px; 
+width: 100%; 
+max-width: 1000px; 
+margin: 20px auto;
+background: #34495e;
+border-radius: 8px;
+border: 1px solid #2c3e50;
+box-shadow: 100 800px 8px rgba(0, 0, 0, 0.3);
+overflow: hidden;
+}
+
+.month {
+background: #2c3e50;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.month h2 {
+background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
+color: #ecf0f1;
+padding: 10px; 
+margin: 0;
+text-align: center;
+border-radius: 6px;
+font-size: 0.9em;
+text-transform: uppercase;
+letter-spacing: 6.5px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+
+th, td {
+width: 0%;
+text-align: center;
+padding: 10px;
+font-size: 0.8em;
+}
+
+th {
+background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+color: #ecf0f1;
+border-bottom: 3px solid #1abc9c;
+}
+
+td {
+background: #34495e;
+color: #ecf0f1;
+position: center;
+border-radius: 6px;
+
+}
+
+td.weekend {
+color: #e74c3c;
+font-weight: bold;
+}
+
+.month-year {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.month-year a {
+color: #fff;
+text-decoration: none;
+}
+
+.month-year a:hover {
+color: #ddd;
+}
+
+.red-dot {
+width: 6px;
+height: 6px;
+background-color: #e74c3c;
+border-radius: 100%;
+display: inline-block;
+margin-left: 10px;
+
+}
+
+.holiday-tooltip {
+display: none;
+position: relative;
+background: #681818;
+color: #ecf0f1;
+padding: 0px;
+border-radius: 100px;
+font-size: 12px;
+margin-top: -16px;
+white-space: nowrap;
+z-index: 10;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+td:hover .holiday-tooltip {
+display: block;
+}
+
+tr:nth-child(odd) td {
+background: #2c3e50;
+}
+
+tr:nth-child(even) td {
+background: #34495e;
+}
+
+td:not(.weekend):nth-child(7) {
+border-right: 0px solid #16a085;
+}
